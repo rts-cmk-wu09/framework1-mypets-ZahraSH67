@@ -14,6 +14,7 @@ const StyledImg = styled.img`
 
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
+  border-radius: ${(props) => props.border}px;
   /* border-radius: 10px; */
 `;
 const Image = (props) => {
