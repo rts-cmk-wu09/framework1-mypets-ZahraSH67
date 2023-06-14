@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import Img from "../assets/Home.png"
+import styled from "styled-components";
+// import Img from "../assets/Home.png"
 
 const StyledImg = styled.img`
   /* ${(props) =>
@@ -14,10 +14,10 @@ const StyledImg = styled.img`
 
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
-  border-radius: ${(props) => props.border}px;
+  border-radius: ${(props) => props.radius}px;
   /* border-radius: 10px; */
 `;
 const Image = (props) => {
-  return <StyledImg {...props} />;
+  return <StyledImg {...props}></StyledImg>
 };
 export default Image;

@@ -8,8 +8,10 @@ const StyledButton = styled.button`
   border: solid 1px;
   border-color: #aaa9b1;
   border-radius: 25px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
-  font-weight: bold;
 `;
 
 const Button = (props) => {

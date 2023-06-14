@@ -16,6 +16,7 @@ const StyledHeading = styled.h1`
   
   font-size: ${(props) => props.size}px;
   font-weight: ${(props) => props.weight}px;
+  font-family: ${(props) => props.family};
 `
 const Heading = (props) => {
   return <StyledHeading {...props}>{props.title}</StyledHeading>;

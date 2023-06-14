@@ -1,5 +1,5 @@
 {
-  "name": "framework1-mypets-zahrash67-firstvirsion",
+  "name": "framework1-mypets-zahrash67",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -23,6 +27,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "react-router-dom": "^6.12.0",
     "vite": "^4.3.2"
   }
 }

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { MdLocationPin } from "react-icons/md";
+// import {useOutletContext} from "react-router-dom"
+// import { useFetch } from "../useFetch";
 
 
 const StyledDiv = styled.div`
@@ -7,14 +9,12 @@ const StyledDiv = styled.div`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   font-size: ${(props) => props.size}px;
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
-    /* width: 100px;
     height: 20px;
-    font-size: 10px; */
 `;
 
 const StyledMdLocationPin = styled(MdLocationPin)`
@@ -25,12 +25,18 @@ const StyledPlace = styled.p`
 `;
 
 const Location = (props) => {
-    return ( 
-        <StyledDiv {...props}>
-            <StyledMdLocationPin />
-            <StyledPlace >{props.location}New York City</StyledPlace>
-        </StyledDiv>
-     );
-}
+    // const [auth, setAuth] = useOutletContext();
+    // let data = useFetch(auth, setAuth, "https://api.petfinder.com/v2/animals");
+    // console.log("animals:" + data.animals.id)
+  return (
+    
+    <StyledDiv {...props}>
+         <StyledMdLocationPin />
+         <StyledPlace>New York City</StyledPlace>
+     </StyledDiv>
+     
+  );
+};
+
  
 export default Location;

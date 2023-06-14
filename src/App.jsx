@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import './App.css'
-// import Home from './pages/Home'
-import ListView from './pages/ListView'
+import { useState } from "react";
+import "./App.css";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+const [context, setContext] = useState({})
 
   return (
-    <div className='app'>
-      {/* <Home /> */}
-      <ListView />
-    
+    <div className="App">
+      <Outlet context={[context, setContext]}/>
     </div>
-  )
-    
+  );
 }
 
-export default App
+export default App;
