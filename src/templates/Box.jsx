@@ -8,6 +8,7 @@ import Location from "../components/Location";
 import LoadingView from "../pages/LoadingView";
 import DogImg from "../assets/Dog.png";
 import ErrorView from "../pages/ErrorView";
+import { useState } from "react";
 
 const StyledCardContainer = styled.article`
   display: flex;
@@ -65,6 +66,7 @@ const StyledP = styled.p`
 
 const Box = () => {
     const [data, error, loading] = useAxios();
+    // const [bookmarked, setBookmarked] = useState(JSON.parse(localStorage.getItem(data.id)))
     return (
       <>
          {error && <ErrorView />}
@@ -85,7 +87,19 @@ const Box = () => {
 
                     <StyledName>
                       <Heading title={animal.name} size="20" family="'Lato', sans-serif"/>
-                      <CircleButton picture={<FaHeart color="D9D9D9" />} />
+                      
+                      <CircleButton
+                      
+                      // onClick={()=>{
+                      //   setBookmarked(!bookmarked);
+                      //   bookmarked
+                      //   ? localStorage.removeItem(id)
+                      //   : localStorage.setItem(id, JSON.stringify(data.id))
+                      // }} picture={<FaHeart color="D9D9D9" />}
+                      
+                      />
+
+
                     </StyledName>
 
                     <Location />

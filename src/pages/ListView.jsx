@@ -1,10 +1,8 @@
-
 // import styled from "styled-components";
 import Box from "../templates/Box";
 import SearchingBar from "../templates/SearchingBar";
 import NavigationBar from "../templates/NavigationBar";
 import OptionSets from "../templates/OptionSets";
-
 
 // const StyledDiv = styled.div`
 //   display: flex;
@@ -33,7 +31,6 @@ const ListView = (props) => {
       <OptionSets />
       <Box />
       <NavigationBar />
-
     </>
   );
 };
